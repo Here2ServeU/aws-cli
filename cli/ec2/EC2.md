@@ -11,9 +11,9 @@ aws ec2 create-security-group --group-name t2s-nginx-sg --description "Security 
 
 
 # To allow SSH access on port 22. 
-aws ec2 authorize-security-group-ingress --group-id sg-071a908845cdaa34a --protocol tcp --port 22 --cidr 172.31.0.0/16
+aws ec2 authorize-security-group-ingress --group-id sg-071a908845cdaa34a --protocol tcp --port 22 --cidr 172.39.0.0/16
 
-aws ec2 authorize-security-group-ingress --group-id sg-071a908845cdaa34a --protocol tcp --port 22 --cidr 216.249.239.209/32
+aws ec2 authorize-security-group-ingress --group-id sg-071a908845cdaa34a --protocol tcp --port 22 --cidr 137.229.139.109/32
    
 # To find your system IP: 
 curl ifconfig.me
