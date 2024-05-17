@@ -1,0 +1,1 @@
+The AWS Command Line Interface (CLI) is a unified tool to manage AWS services. With just one tool, you can control multiple AWS services from the command line and automate them through scripts. The AWS CLI offers direct access to the public APIs of AWS, making it easy to configure and manage AWS services.
