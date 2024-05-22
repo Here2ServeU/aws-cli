@@ -10,6 +10,6 @@ First, ensure the AWS Command Line Interface (CLI) is configured. This will allo
 ```
 aws configure
 
-You will be prompted to enter your AWS Access Key, Secret Key, region, and output format. This step is essential for authenticating your AWS CLI with your AWS account.
+**You will be prompted to enter your AWS Access Key, Secret Key, region, and output format. This step is essential for authenticating your AWS CLI with your AWS account.** 
 
 ## **Step 2: Create an IAM Group**
