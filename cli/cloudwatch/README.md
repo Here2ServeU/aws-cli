@@ -4,7 +4,7 @@ aws logs create-log-group --log-group-name t2s-web-server-log-group
 ## Step 2: Create Log Stream
 aws logs create-log-stream --log-group-name t2s-web-server-log-group --log-stream-name t2s-web-server-log-stream
 
-## Step 3: Creating Metics
+## Step 3: Creating Metrics
 
 ### Set CPU Metric
 aws cloudwatch put-metric-alarm --alarm-name "HighCPUUtilization"
