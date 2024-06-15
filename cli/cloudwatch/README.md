@@ -4,7 +4,10 @@ aws logs create-log-group --log-group-name t2s-web-server-log-group
 ## Step 2: Create Log Stream
 aws logs create-log-stream --log-group-name t2s-web-server-log-group --log-stream-name t2s-web-server-log-stream
 
-## Step 3: Creating Metrics
+## Step 3: Creating an SNS Topic
+aws sns create-topic --name alarm-topic
+
+## Step 4: Creating Metrics
 
 ### Set CPU Metric
 aws cloudwatch put-metric-alarm --alarm-name "HighCPUUtilization"
@@ -27,7 +30,7 @@ aws cloudwatch put-metric-alarm --alarm-name "LowDiskSpace"
 --dimensions Name=InstanceId,Value=i-0c1d24c351039f6e1 --evaluation-periods 1
 --alarm-actions arn:aws:sns:us-east-1:730335276920:alarm-topic --unit Percent
 
-## Step 4 Validate:
+## Step 5 Validate:
 aws cloudwatch describe-alarms --alarm-name-prefix "LowDiskSpace"
 
 aws cloudwatch describe-alarms --alarm-name-prefix "HighMemoryUtilization"
